@@ -4,6 +4,9 @@ CONFIG="/home/luoshuilong/brks/brks/log.conf"
 PIDFILE="/home/luoshuilong/brks/brks/brkspidfile.log"
 
 if [ ! -x "$PROGRAM" ]; then
+    echo "no search file $PROGRAM"
+    exit 1
+fi
 
 if [ ! -x "$CONFIG" ]; then
     echo "no search file $CONFIG"
