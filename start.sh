@@ -5,10 +5,10 @@ PIDFILE="/home/luoshuilong/brks/brks/brkspidfile.log"
 
 if [ ! -x "$PROGRAM" ]; then
 
-#if [ ! -x "$CONFIG" ]; then
-#    echo "no search file $CONFIG"
-#    exit 1
-#fi
+if [ ! -x "$CONFIG" ]; then
+    echo "no search file $CONFIG"
+    exit 1
+fi
 
 case $1 in
     "start")
